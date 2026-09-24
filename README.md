@@ -7,16 +7,60 @@
 - Bildmodell: **OpenAI** (eigener API-Schlüssel, ca. 0,02 $ pro Version) oder optional **lokal und kostenlos mit ComfyUI**.
 - Projekte, Bilder und dein API-Schlüssel bleiben **nur auf deinem Mac**. Füllwerk hat keinen Server und sammelt keine Daten.
 
-## Installieren
+## Installieren – Schritt für Schritt
 
-1. Unter [**Releases**](../../releases/latest) die Datei **`Fuellwerk-1.0.zip`** herunterladen.
-2. Die Zip-Datei doppelklicken. Im Download-Ordner liegt jetzt **Füllwerk**.
-3. **Füllwerk** in den Ordner **Programme** ziehen.
-4. Füllwerk doppelklicken. Beim **ersten Start** meldet macOS „Apple konnte nicht überprüfen, ob ‚Füllwerk‘ frei von Schadsoftware ist“. Das liegt daran, dass die App nicht über ein kostenpflichtiges Apple-Entwicklerkonto signiert ist.
-   - Auf **Fertig** klicken (nicht „In den Papierkorb“).
-   - **Systemeinstellungen → Datenschutz & Sicherheit** öffnen und ganz nach unten scrollen.
-   - Bei „Füllwerk wurde blockiert …“ auf **Dennoch öffnen** klicken und mit dem Mac-Passwort bestätigen.
-   - Das ist nur einmal nötig. Danach startet Füllwerk normal.
+Das dauert etwa 3 Minuten. Du brauchst einen Mac mit **macOS 13 (Ventura) oder neuer**. Welche Version du hast, siehst du im **Apple-Menü** (oben links) → *Über diesen Mac*.
+
+### 1. Herunterladen
+
+1. Die Seite [**Releases → neueste Version**](../../releases/latest) öffnen.
+2. Unten bei **Assets** auf **`Fuellwerk-1.1.zip`** klicken (ca. 0,5 MB). Die Datei landet in deinem Ordner **Downloads**.
+   - In Safari entpackt sich die Zip-Datei oft von selbst. Dann liegt in *Downloads* schon **Füllwerk** mit dem Stuhl-Symbol. Weiter bei Schritt 3.
+
+### 2. Entpacken
+
+1. Den **Finder** öffnen und links auf **Downloads** klicken.
+2. **`Fuellwerk-1.1.zip`** doppelklicken. Daneben erscheint **Füllwerk** mit dem Stuhl-Symbol.
+
+### 3. In „Programme“ legen
+
+1. Ein zweites Finder-Fenster öffnen (⌘N) und links auf **Programme** klicken.
+2. **Füllwerk** aus *Downloads* in **Programme** ziehen.
+   - Fragt der Mac nach einem Passwort, gib dein Mac-Passwort ein.
+   - Gibt es Füllwerk dort schon (ältere Version): **Ersetzen** wählen. Deine Projekte und Einstellungen bleiben erhalten.
+3. Die Zip-Datei in *Downloads* kannst du danach löschen.
+
+### 4. Beim ersten Mal öffnen (einmalig)
+
+Füllwerk ist kostenlos und nicht über ein kostenpflichtiges Apple-Entwicklerkonto signiert. macOS fragt deshalb beim ersten Start nach. Das ist nur **einmal** nötig.
+
+**macOS 15 (Sequoia) und neuer:**
+
+1. In *Programme* **Füllwerk** doppelklicken. Es erscheint „‚Füllwerk‘ nicht geöffnet – Apple konnte nicht überprüfen …“.
+2. Auf **Fertig** klicken, **nicht** „In den Papierkorb legen“.
+3. Im **Apple-Menü** (oben links) → **Systemeinstellungen** → links **Datenschutz & Sicherheit** öffnen.
+4. Ganz nach **unten** scrollen bis zum Abschnitt *Sicherheit*. Dort steht: „‚Füllwerk‘ wurde blockiert, um deinen Mac zu schützen.“
+5. Auf **Dennoch öffnen** klicken und mit Mac-Passwort oder Touch ID bestätigen.
+6. Im nächsten Fenster noch einmal **Dennoch öffnen**. Füllwerk startet.
+
+**macOS 13 (Ventura) und 14 (Sonoma):**
+
+1. In *Programme* **mit der rechten Maustaste** (oder ctrl-Klick) auf **Füllwerk** klicken und **Öffnen** wählen.
+2. In der Nachfrage auf **Öffnen** klicken. Füllwerk startet.
+
+Ab jetzt startet Füllwerk ganz normal per Doppelklick, über das Launchpad oder über Spotlight (⌘ Leertaste, „Füllwerk“).
+
+**Tipp:** Solange Füllwerk läuft, mit der rechten Maustaste auf das Symbol im **Dock** klicken und **Optionen → Im Dock behalten** wählen.
+
+### Falls etwas nicht klappt
+
+| Meldung / Problem | Lösung |
+|---|---|
+| „Füllwerk ist beschädigt und kann nicht geöffnet werden“ | Die Datei hat beim Download ein Sperr-Merkmal bekommen. Das **Terminal** öffnen (Programme → Dienstprogramme), dies eingeben und Enter drücken: `xattr -dr com.apple.quarantine /Applications/Füllwerk.app`. Danach normal öffnen. |
+| Kein „Dennoch öffnen“ in den Systemeinstellungen | Erst einmal versuchen, Füllwerk zu öffnen (Schritt 4.1). Der Knopf erscheint nur für etwa eine Stunde nach diesem Versuch. |
+| „Füllwerk kann auf diesem Mac nicht verwendet werden“ | Der Mac hat eine ältere macOS-Version als 13. Im Apple-Menü → *Systemeinstellungen → Allgemein → Softwareupdate* aktualisieren. |
+| Fenster bleibt leer oder weiß | Füllwerk beenden (⌘Q) und neu starten. Hilft das nicht: im Menü *Darstellung → Neu laden*. |
+| Du findest Füllwerk nicht | Spotlight (⌘ Leertaste) → „Füllwerk“ eingeben. |
 
 ## Einrichten (OpenAI)
 
@@ -72,7 +116,13 @@ Insgesamt belegt das etwa **8–12 GB**. Füllwerk startet ComfyUI danach selbst
 
 ## Gut zu wissen
 
-- **Updates:** Neue Versionen erscheinen unter *Releases*. Die alte App durch die neue ersetzen, deine Projekte und Einstellungen bleiben erhalten.
+- **Updates (ab Version 1.1 automatisch):**
+  - Füllwerk sieht beim Start höchstens einmal am Tag auf GitHub nach, ob es eine neue Version gibt.
+  - Wenn ja, erscheint unten rechts ein Hinweis mit den Neuerungen: **Jetzt aktualisieren** oder **Später**. Ohne deinen Klick wird nichts installiert.
+  - Beim Aktualisieren lädt Füllwerk die neue Version, prüft ihre Prüfsumme und Echtheit, ersetzt sich selbst und startet neu. Deine Projekte, Einstellungen und dein API-Schlüssel bleiben erhalten.
+  - Füllwerk muss dafür im Ordner **Programme** liegen.
+  - Abschalten oder von Hand suchen: **Modell → Erweiterte Einstellungen → Beim Start nach Updates suchen** bzw. **Jetzt nach Updates suchen**. Dabei sieht GitHub deine IP-Adresse.
+  - **Wer noch Version 1.0 hat,** installiert 1.1 einmal von Hand wie oben beschrieben (Schritte 1–3, beim Verschieben „Ersetzen“ wählen). Danach geht es automatisch.
 - **Deinstallieren:** Füllwerk in den Papierkorb legen. Wer auch die Projekte löschen will: `~/Library/WebKit/local.fuellwerk.app` löschen.
 - **Kosten:** Mit OpenAI zahlst du direkt bei OpenAI, Füllwerk verdient nichts daran.
 - Kostenlos, **ohne Gewähr**.
