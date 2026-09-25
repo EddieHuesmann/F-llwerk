@@ -14,13 +14,13 @@ Das dauert etwa 3 Minuten. Du brauchst einen Mac mit **macOS 13 (Ventura) oder n
 ### 1. Herunterladen
 
 1. Die Seite [**Releases → neueste Version**](../../releases/latest) öffnen.
-2. Unten bei **Assets** auf **`Fuellwerk-1.1.zip`** klicken (ca. 0,5 MB). Die Datei landet in deinem Ordner **Downloads**.
+2. Unten bei **Assets** auf **`Fuellwerk-1.2.zip`** klicken (ca. 0,5 MB). Die Datei landet in deinem Ordner **Downloads**.
    - In Safari entpackt sich die Zip-Datei oft von selbst. Dann liegt in *Downloads* schon **Füllwerk** mit dem Stuhl-Symbol. Weiter bei Schritt 3.
 
 ### 2. Entpacken
 
 1. Den **Finder** öffnen und links auf **Downloads** klicken.
-2. **`Fuellwerk-1.1.zip`** doppelklicken. Daneben erscheint **Füllwerk** mit dem Stuhl-Symbol.
+2. **`Fuellwerk-1.2.zip`** doppelklicken. Daneben erscheint **Füllwerk** mit dem Stuhl-Symbol.
 
 ### 3. In „Programme“ legen
 
@@ -82,8 +82,15 @@ Unter der Qualitätsanzeige siehst du, was du diesen Monat über Füllwerk ausge
 5. Die Ergebnisse erscheinen unten in der **Galerie**. Das ausgewählte Bild ist das, woran du weiterarbeitest. Nochmal klicken führt zurück zum Original.
    - **Rechtsklick** auf ein Galeriebild: Farbe markieren, als final markieren, exportieren, löschen.
    - **⌘-Klick** wählt mehrere Bilder aus.
-6. **Radierer (E):** Generiertes wegradieren, darunter kommt das Ausgangsbild zum Vorschein. Mit ⌥ holst du es zurück.
-7. **Exportieren** (oben rechts): PNG, JPEG, WebP oder PDF, auch mehrere Versionen auf einmal.
+6. **Radierer (E):** Generiertes wegradieren, darunter kommt das Ausgangsbild zum Vorschein. Mit ⌥ holst du es zurück. Härte und Deckkraft sind einstellbar.
+7. **Referenzbilder** (rechts hinzufügen, dann **Aufs Bild**): verschieben, skalieren, drehen, mit × wieder entfernen. **Einblenden** fügt sie passend ins Foto ein. Mit einer Skizze dazu entsteht zum Beispiel eine Hand, die das Objekt hält.
+8. **Text (T):**
+   - Ins Bild klicken und schreiben. Schrift, Farbe, fett, kursiv und Kontur lassen sich einstellen, dazu verschieben, skalieren und drehen.
+   - Im Prompt beschreiben, wie der Text aussehen soll, z. B. „glass text“, „neon sign“, „painted on the wall“.
+   - **Einblenden:** OpenAI macht ihn zum echten Teil des Bildes. Auf einer Wand oder einem Schild passt er sich perspektivisch an, am Himmel bleibt er flach.
+   - Nennt der Prompt eine Szene (z. B. „… on a beach at sunset“), entsteht der Hintergrund mit.
+   - **Direkt einsetzen** schreibt den Text ohne KI ins Bild.
+9. **Exportieren** (oben rechts): PNG, JPEG, WebP oder PDF, auch mehrere Versionen auf einmal.
 
 Weitere Tastenkürzel: **Leertaste** halten vergleicht mit dem Ausgangsbild, **Esc** bricht das Erzeugen ab, **⌘Z** nimmt Skizzen- und Radierstriche zurück.
 
