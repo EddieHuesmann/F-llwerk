@@ -14,13 +14,13 @@ Das dauert etwa 3 Minuten. Du brauchst einen Mac mit **macOS 13 (Ventura) oder n
 ### 1. Herunterladen
 
 1. Die Seite [**Releases → neueste Version**](../../releases/latest) öffnen.
-2. Unten bei **Assets** auf **`Fuellwerk-1.4.zip`** klicken (ca. 0,7 MB). Die Datei landet in deinem Ordner **Downloads**.
+2. Unten bei **Assets** auf **`Fuellwerk-1.4.1.zip`** klicken (ca. 0,7 MB). Die Datei landet in deinem Ordner **Downloads**.
    - In Safari entpackt sich die Zip-Datei oft von selbst. Dann liegt in *Downloads* schon **Füllwerk** mit dem Stuhl-Symbol. Weiter bei Schritt 3.
 
 ### 2. Entpacken
 
 1. Den **Finder** öffnen und links auf **Downloads** klicken.
-2. **`Fuellwerk-1.4.zip`** doppelklicken. Daneben erscheint **Füllwerk** mit dem Stuhl-Symbol.
+2. **`Fuellwerk-1.4.1.zip`** doppelklicken. Daneben erscheint **Füllwerk** mit dem Stuhl-Symbol.
 
 ### 3. In „Programme“ legen
 
