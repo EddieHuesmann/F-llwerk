@@ -14,13 +14,13 @@ Das dauert etwa 3 Minuten. Du brauchst einen Mac mit **macOS 13 (Ventura) oder n
 ### 1. Herunterladen
 
 1. Die Seite [**Releases → neueste Version**](../../releases/latest) öffnen.
-2. Unten bei **Assets** auf **`Fuellwerk-1.4.1.zip`** klicken (ca. 0,7 MB). Die Datei landet in deinem Ordner **Downloads**.
+2. Unten bei **Assets** auf **`Fuellwerk-1.4.2.zip`** klicken (ca. 0,7 MB). Die Datei landet in deinem Ordner **Downloads**.
    - In Safari entpackt sich die Zip-Datei oft von selbst. Dann liegt in *Downloads* schon **Füllwerk** mit dem Stuhl-Symbol. Weiter bei Schritt 3.
 
 ### 2. Entpacken
 
 1. Den **Finder** öffnen und links auf **Downloads** klicken.
-2. **`Fuellwerk-1.4.1.zip`** doppelklicken. Daneben erscheint **Füllwerk** mit dem Stuhl-Symbol.
+2. **`Fuellwerk-1.4.2.zip`** doppelklicken. Daneben erscheint **Füllwerk** mit dem Stuhl-Symbol.
 
 ### 3. In „Programme“ legen
 
@@ -98,7 +98,7 @@ Kurze Erklärungen zu allen Knöpfen erscheinen, wenn du mit der Maus über das 
 | Schützen | P | Grün übermalen, was sich **nie** ändern darf (Gesichter, Logos, Schrift) – gilt für alle Versionen |
 | Frei transformieren | V oder ⌘T | Generiertes verschieben, skalieren, drehen, mit ⌘ + Ecke perspektivisch verzerren; **Verbiegen** legt ein Gitter darüber (Doppelklick setzt einen Punkt zurück) |
 | Bild erweitern | X | Ränder nach außen ziehen, die neuen Flächen werden passend ergänzt |
-| Text | T | Text ins Bild schreiben und von der KI einblenden lassen oder direkt einsetzen |
+| Text | T | Text ins Bild schreiben und von der KI einblenden lassen oder direkt einsetzen. **Auto** entscheidet selbst, **Frei im Raum** macht 3D-Buchstaben, die vor dem Hintergrund schweben (genau an deiner Stelle, die Umgebung bleibt unverändert), **Verschmelzen** passt den Text an eine Fläche an (Wand, Schild, Bildschirm). Die Schreibweise wird danach geprüft; weicht sie ab, ist die Version markiert |
 
 Unter den Werkzeugen: **Auswahl umkehren**, **aufheben** (⌘D) und **Auswahl verfeinern** (vergrößern, verkleinern, weiche Kante, glätten). Die Auswahl bleibt im Projekt gespeichert.
 
@@ -117,6 +117,7 @@ Unter den Werkzeugen: **Auswahl umkehren**, **aufheben** (⌘D) und **Auswahl ve
 - **Rechtsklick** auf eine Version:
   - Farbe markieren, als final markieren, exportieren, löschen.
   - **Mehr davon erzeugen** – gleiche Einstellungen, neue Varianten.
+  - **Prompt anzeigen …** – was du eingegeben hast, was an die KI ging, Modell, Qualität, Stil.
   - **Prompt und Einstellungen übernehmen**.
   - **Details nachrechnen** – bei großen Fotos wird der neue Bereich in voller Auflösung schärfer gerechnet (fragt vorher mit Preis).
   - **Als Pinselquelle** für die Retusche.
