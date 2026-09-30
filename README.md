@@ -15,13 +15,13 @@ Das dauert etwa 3 Minuten. Du brauchst einen Mac mit **macOS 13 (Ventura) oder n
 ### 1. Herunterladen
 
 1. Die Seite [**Releases → neueste Version**](../../releases/latest) öffnen.
-2. Unten bei **Assets** auf **`Patchwork-1.3.3.zip`** klicken (ca. 0,7 MB). Die Datei landet in deinem Ordner **Downloads**.
+2. Unten bei **Assets** auf **`Patchwork-1.3.4.zip`** klicken (ca. 0,7 MB). Die Datei landet in deinem Ordner **Downloads**.
    - In Safari entpackt sich die Zip-Datei oft von selbst. Dann liegt in *Downloads* schon **Patchwork** mit dem Stuhl-Symbol. Weiter bei Schritt 3.
 
 ### 2. Entpacken
 
 1. Den **Finder** öffnen und links auf **Downloads** klicken.
-2. **`Patchwork-1.3.3.zip`** doppelklicken. Daneben erscheint **Patchwork** mit dem Stuhl-Symbol.
+2. **`Patchwork-1.3.4.zip`** doppelklicken. Daneben erscheint **Patchwork** mit dem Stuhl-Symbol.
 
 ### 3. In „Programme“ legen
 
@@ -95,7 +95,7 @@ Kurze Erklärungen zu allen Knöpfen erscheinen, wenn du mit der Maus über das 
 | Zauberstab | W | Fläche ähnlicher Farbe per Klick auswählen (Himmel, Wand). Toleranz einstellbar |
 | Skizze | S | Grob malen, was entstehen soll. **⌘** + Ziehen: gerade Linie, **⌥**: radieren |
 | Objekt | O | Objekt anklicken oder benennen (nur mit ComfyUI) |
-| Retusche | E | Generiertes wegradieren – oder mit **Quelle** Teile aus einer anderen Version hineinmalen |
+| Retusche | E | Generiertes **wegradieren** – oder im Modus **Zurückmalen** wieder einmalen (⌥ wechselt beim Malen kurz den Modus). Mit **Quelle** Teile aus einer anderen Version hineinmalen |
 | Schützen | P | Grün übermalen, was sich **nie** ändern darf (Gesichter, Logos, Schrift) – gilt für alle Versionen |
 | Frei transformieren | V oder ⌘T | Generiertes verschieben, skalieren, drehen, mit ⌘ + Ecke perspektivisch verzerren; **Verbiegen** legt ein Gitter darüber (Doppelklick setzt einen Punkt zurück) |
 | Bild erweitern | X | Ränder nach außen ziehen, die neuen Flächen werden passend ergänzt |
@@ -109,6 +109,7 @@ Unter den Werkzeugen: **Auswahl umkehren**, **aufheben** (⌘D) und **Auswahl ve
 - **＋** speichert deine aktuellen Einstellungen als **eigenes Preset** (Prompt, Stil, Art der Bearbeitung, Qualität, Anzahl). Eigene Presets lassen sich im Presets-Menü **exportieren und importieren**, z. B. für Kollegen.
 - **Verlauf** (Uhr-Symbol): frühere Prompts, mit ☆ als Favorit merken.
 - **Verbessern:** GPT schreibt deinen Prompt konkreter, passend zum Bild (kostet ca. 0,1 Cent).
+- **Referenzbilder** (+): zeigen der KI, wie etwas aussehen soll. Jedes hochgeladene Bild landet automatisch in der **Referenz-Bibliothek** (Knopf neben dem +) und lässt sich dort mit einem Klick in jedem anderen Projekt verwenden; dieselbe Datei steht nur einmal drin.
 - **Stil:** gilt für jeden Prompt im Projekt, z. B. „watercolor“ oder „35mm film“.
 - **Art der Bearbeitung:** *Verändern* behält, was da ist (brennt, verschneit, bei Nacht …), *Einfügen* malt Neues. *Automatisch* erkennt es aus dem Prompt.
 - **Qualität:** *Günstig* (ca. 2 Cent pro Version) oder *Besser* (ca. 7 Cent). Für Änderungen am ganzen Bild ist *Besser* deutlich treuer.
@@ -117,6 +118,7 @@ Unter den Werkzeugen: **Auswahl umkehren**, **aufheben** (⌘D) und **Auswahl ve
 
 - **Rechtsklick** auf eine Version:
   - Farbe markieren, als final markieren, exportieren, löschen.
+  - **KI-Kennzeichnung:** „mit KI erstellt“ klein unten rechts ins Bild (grau) – gilt nur für diese Version, auch über das Häkchen *KI-Kennzeichnung* über der Galerie. Beim Export ist die Option dann vorausgewählt und wird ins Bild eingerechnet; die Version selbst bleibt unverändert.
   - **Mehr davon erzeugen** – gleiche Einstellungen, neue Varianten.
   - **Prompt anzeigen …** – was du eingegeben hast, was an die KI ging, Modell, Qualität, Stil.
   - **Prompt und Einstellungen übernehmen**.
@@ -133,8 +135,10 @@ Unter den Werkzeugen: **Auswahl umkehren**, **aufheben** (⌘D) und **Auswahl ve
 
 ### Projekte
 
-- In der **Projektübersicht** (oben *Projekte*, ⌘1) lassen sich Projekte in Ordner sortieren, duplizieren, umbenennen.
-- **Sichern:** *Alles sichern* oder per Rechtsklick einzelne Projekte/Ordner als **.fuellwerk**-Datei – mit allen Versionen. **Einspielen** (oder die Datei hineinziehen) holt sie zurück, z. B. auf einem anderen Mac. Nichts wird dabei überschrieben.
+- Patchwork startet in der **Projektübersicht** (oben *Projekte*, ⌘1), immer auf der obersten Ebene. Dort lassen sich Projekte in Ordner sortieren und duplizieren.
+- **Umbenennen:** Projekt oder Ordner anklicken und **Enter** drücken – der Name wird direkt in der Kachel bearbeitet (Enter übernimmt, Esc bricht ab).
+- **Neu anlegen:** *+ Neues Projekt* öffnet ein kleines Fenster: Name (mit Vorschlag „Neues Projekt“, gleich zum Überschreiben markiert), dann ein Bild hineinziehen, mit ⌘V einfügen, auswählen – oder eine leere Leinwand wählen. Esc bricht ab. Ein neuer Ordner heißt erst „Neuer Ordner“ und ist gleich zum Umbenennen markiert.
+- **Sichern:** *Alles sichern* oder per Rechtsklick einzelne Projekte/Ordner als **.patchwork**-Datei – mit allen Versionen (ältere **.fuellwerk**-Sicherungen gehen auch). **Einspielen** (oder die Datei hineinziehen) holt sie zurück, z. B. auf einem anderen Mac. Nichts wird dabei überschrieben.
 - **Aufräumen …** schlägt alte Versionen ohne Farbe und ohne „Final“ vor und zeigt, wie viel Platz frei wird. Gelöscht wird erst nach deiner Bestätigung.
 
 ### Wichtigste Tastenkürzel
@@ -144,8 +148,10 @@ Unter den Werkzeugen: **Auswahl umkehren**, **aufheben** (⌘D) und **Auswahl ve
 | **⌘↩** | Versionen erzeugen (während einer Runde: einreihen) |
 | **Mausrad** / **⇧ + Ziehen** | Bild zoomen / verschieben (auch Leertaste + Ziehen oder mittlere Maustaste) |
 | **Leertaste** halten | mit dem Ausgangsbild vergleichen |
-| **⌘Z** | Auswahl, Skizze, Retusche oder Schutz rückgängig |
+| **⌘Z** | rückgängig – alles außer dem Erzeugen: Auswahl, Skizze, Schutz, Retusche, Text- und Referenz-Ebenen, Transformieren, Farbkorrektur, Markierungen, gelöschte Versionen; in der Projektübersicht Umbenennen, Verschieben, Ordner und gelöschte Projekte (solange Patchwork offen ist) |
 | **Esc** | laufende Runde abbrechen |
+| **← → ↑ ↓** | durch die Versionen der Galerie – im Baum entlang seiner Äste |
+| **⌘← / ⌘→** | im Baum zur vorigen / nächsten Abgabelung, **⌘↑ / ⌘↓** in den Zweig darüber / darunter |
 | **?** | alle Tastenkürzel |
 
 ### Kosten im Blick
